@@ -1,9 +1,8 @@
 import Sidebar from "./components/Sidebar/Sidebar";
-
+import "./App.css";
 function App() {
   return (
     <div className="app">
-      Whatsapp clone
       <div className="app__body">
         <Sidebar />
       </div>
