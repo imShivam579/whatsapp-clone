@@ -2,7 +2,6 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Chat from "./components/Chat/Chat";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useState } from "react";
 import Login from "./components/Login/Login";
 import { useStateValue } from "./stateProvider";
 function App() {
@@ -17,6 +16,9 @@ function App() {
             <Sidebar />
             <Switch>
               <Route path="/rooms/:roomId">
+                <Chat />
+              </Route>
+              <Route path="/">
                 <Chat />
               </Route>
               <Route path="/">

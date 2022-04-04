@@ -1,16 +1,10 @@
 import { Avatar, IconButton } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import {
-  SearchOutlined,
-  AttachFile,
-  MoreVert,
-  InsertEmoticonIcon,
-  MicIcon,
-} from "@material-ui/icons";
+import { SearchOutlined, AttachFile, MoreVert } from "@material-ui/icons";
 import db from "../../firebase";
-// import MicIcon from '@material-ui/icons/Mic';
-// import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+import MicIcon from "@material-ui/icons/Mic";
+import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import "./chat.css";
 function Chat() {
   const Random_SVG = "https://avatars.dicebear.com/api/human";
